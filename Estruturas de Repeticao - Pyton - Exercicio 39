@@ -1,0 +1,13 @@
+# 39 - Elabore um programa que calcule a área de um triângulo, cuja base e altura são fornecidas pelo usuário.
+# Esse programa não pode permitir a entrada de dados inválidos, ou seja, medidas menores ou igual a 0.
+
+base = float(input('Informe o valor da base do triângulo: '))
+altura = float(input('Informe o valor da altura do triângulo: '))
+area = 0
+
+if base >= 0 or altura >= 0:
+    area = base * altura / 2
+    print(f'O valor da área do triângulo é: {area}')
+
+else:
+    print('Valores informados incorreto, favor verificar')
